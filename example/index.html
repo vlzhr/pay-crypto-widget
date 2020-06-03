@@ -7,11 +7,12 @@
     <script>
         dApp.widget.initWidget("vlzhr", "WAVES");
     </script>
-    <script>
-        const totalToPay = 10**8; // 1 WAVES
-    </script>
 </head>
 <body>
-    <button class="pay" onclick="dApp.widget.initPurchase(totalToPay)">pay!</button>
+    <button class="pay">pay!</button>
+    <script>
+        const totalToPay = 10**8; // 1 WAVES
+        document.querySelector(".pay").addEventListener("click", () => {dApp.widget.initPurchase(totalToPay);})
+    </script>
 </body>
 </html>
