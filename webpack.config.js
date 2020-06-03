@@ -1,6 +1,15 @@
 const path = require('path');
 
 const main = (name, minimize) => ({
+    module: {
+        rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
+        ],
+    },
     entry: './src/index.ts',
     mode: "production",
     optimization: {
@@ -11,7 +20,7 @@ const main = (name, minimize) => ({
         extensions: ['.tsx', '.ts', '.js'],
     },
     output: {
-        globalObject: "dApp",
+        library: "dApp",
         filename: name,
         path: path.resolve(__dirname, 'dist'),
     }

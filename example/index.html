@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crypto Pay Demo</title>
+    <script src="../dist/paycrypto.js"></script>
+    <script>
+        dApp.widget.initWidget("vlzhr", "WAVES");
+    </script>
+    <script>
+        const totalToPay = 10**8; // 1 WAVES
+    </script>
+</head>
+<body>
+    <button class="pay" onclick="dApp.widget.initPurchase(totalToPay)">pay!</button>
+</body>
+</html>
