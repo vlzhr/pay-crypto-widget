@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Crypto Pay Demo</title>
+    <link rel="stylesheet" href="style.css">
     <script src="../dist/paycrypto.js"></script>
     <script>
         dApp.widget.initWidget("vlzhr", "WAVES");
     </script>
 </head>
 <body>
-    <button class="pay">pay!</button>
-    <script>
-        const totalToPay = 10**8; // 1 WAVES
-        document.querySelector(".pay").addEventListener("click", () => {dApp.widget.initPurchase(totalToPay);})
-    </script>
+    <main>
+        <div class="row">
+            <div class="total">
+                total: <span class="total__amount">1 WAVES</span>
+            </div>
+            <button class="pay" onclick="dApp.widget.initPurchase(totalToPay)">pay with crypto!</button>
+        </div>
+    </main>
 </body>
+<script>
+    const totalToPay = 10**8; // 1 WAVES
+</script>
 </html>

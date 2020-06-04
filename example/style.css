@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    width: 350px;
+    margin: 30px auto;
+}
+
+button {
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    transition: margin-top .5s;
+}
+
+button:hover {
+    margin-top: 6px;
+}
+
+.total {
+    margin: 0 20px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.total__amount {
+    font-weight: 800;
+}
+
+.row {
+    display: flex;
+}

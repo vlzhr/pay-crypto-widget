@@ -20,12 +20,15 @@ class Widget {
     }
 
     initPurchase (
-        invoiceValue: number
+        invoiceValue: number,
+        paymentHandler?: any,
+        errorHandler?: any,
+        invoiceId?: string
     ) {
-        signer.transfer({recipient: this.address, amount: invoiceValue})
+        signer.transfer({recipient: this.address, amount: invoiceValue, attachment: (invoiceId ? invoiceId : "")})
             .broadcast()
-            .then(console.log)
-            .catch(console.log);
+            .then(paymentHandler ? paymentHandler : console.log)
+            .catch(errorHandler ? errorHandler : console.log);
     }
 }
 
