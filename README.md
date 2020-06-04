@@ -1,13 +1,15 @@
 # Accept token payments on your website
 
+![](https://server.vlzhr.top/hosted/9446628-payment.gif)
+
 Waves Ecosystem is great for [issuing crypto assets](https://docs.waves.exchange/en/waves-exchange/waves-exchange-online-desktop/online-desktop-asset/online-desktop-token-creation). 
 This tool is designed to provide an easier functionality for purchases with tokens issued on Waves.
 
 Use this widget to accept crypto payments on your website. [Check the demo](https://vlzhr.github.io/pay-crypto-widget/example/)!
 
-## Quick Start
+## Quick Start 🔥
 
-### Raw HTML and JavaScript
+#### Instantly add widget to your HTML
 
 **1--** Connect [JS file](https://raw.githubusercontent.com/vlzhr/pay-crypto-widget/master/dist/paycrypto.js) to your website
 
@@ -27,7 +29,7 @@ for example:
 
 Check the example full [source code](https://github.com/vlzhr/pay-crypto-widget/blob/master/example/index.html)!
 
-### Use TypeScript module
+#### or use TypeScript module
 
 Import the [Pay Crypto module](https://github.com/vlzhr/pay-crypto-widget/blob/master/src/index.ts) and use  `Widget` class. 
 You will need to install Waves Signer and Waves Exchange Provider libraries for this:
@@ -37,7 +39,7 @@ You will need to install Waves Signer and Waves Exchange Provider libraries for 
 `npm i @waves.exchange/provider-web`
 
 
-## Configuring widget
+## Configuring widget ⚙
 
 You can set following properties of a widget using `initWidget` method:
 
@@ -50,7 +52,7 @@ You can set following properties of a widget using `initPurchase` method:
          errorHandler?: Function,
          invoiceId?: string`
 
-## Call to action
+## Call to action 🌱
 
 As you may see, the widget has the functionality of MVP, as for now. 
 To make it more useful we need your feedback.
