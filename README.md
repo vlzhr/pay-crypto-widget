@@ -1,19 +1,19 @@
 # Accept token payments on your website
 
-Waves Ecosystem is great for creating crypto assets. 
+Waves Ecosystem is great for [issuing crypto assets](https://docs.waves.exchange/en/waves-exchange/waves-exchange-online-desktop/online-desktop-asset/online-desktop-token-creation). 
 This tool is designed to provide an easier functionality for purchases with tokens issued on Waves.
 
-Use this to accept crypto payments on your website! 
+Use this widget to accept crypto payments on your website. [Check the demo](https://vlzhr.github.io/pay-crypto-widget/example/)!
 
 ## Quick Start
 
 ### Raw HTML and JavaScript
 
-1-- Connect [JS file](https://raw.githubusercontent.com/vlzhr/pay-crypto-widget/master/dist/paycrypto.js) to your website
+**1--** Connect [JS file](https://raw.githubusercontent.com/vlzhr/pay-crypto-widget/master/dist/paycrypto.js) to your website
 
 `<script src="paycrypto.js"></script>`
 
-2-- Initialize and set up widget
+**2--** Initialize and set up widget
 
 `dApp.widget.initWidget("<recipient address or alias>", "<asset id>");`
 
@@ -21,9 +21,11 @@ for example:
 
 `dApp.widget.initWidget("vlzhr", "WAVES");`
 
-3-- Call payment method when needed
+**3--** Call payment method when needed
 
 `dApp.widget.initPurchase(TOTALAMOUNT)`
+
+Check the example full [source code](https://github.com/vlzhr/pay-crypto-widget/blob/master/example/index.html)!
 
 ### Use TypeScript module
 
