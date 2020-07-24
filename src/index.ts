@@ -25,7 +25,8 @@ class Widget {
         errorHandler?: any,
         invoiceId?: string
     ) {
-        signer.transfer({recipient: this.address, amount: invoiceValue, attachment: (invoiceId ? invoiceId : "")})
+        signer.transfer({recipient: this.address, amount: invoiceValue, assetId: this.assetName,
+            attachment: (invoiceId ? invoiceId : "")})
             .broadcast()
             .then(paymentHandler ? paymentHandler : console.log)
             .catch(errorHandler ? errorHandler : console.log);
