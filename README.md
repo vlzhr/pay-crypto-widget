@@ -7,7 +7,7 @@ This tool is designed to provide an easier functionality for purchases with toke
 
 Use this widget to accept crypto payments on your website. [Check the demo](https://vlzhr.github.io/pay-crypto-widget/example/)!
 
-## Quick Start 🔥
+## Get Started 🔥
 
 #### Instantly add widget to your HTML
 
